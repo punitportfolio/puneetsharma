@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}About — Punit Sharma{% endblock %}
+{% block description %}About Punit Sharma, Digital Marketing Specialist — background, education and interests.{% endblock %}
+{% block preloader_letters %}<span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>{% endblock %}
+{% block content %}
+
+<!-- ABOUT -->
+<section id="about" style="padding-top:160px;">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <img src="{{ url_for('static', filename='media/overview.png') }}" alt="Punit Sharma digital marketing overview dashboard">
+    </div>
+    <div class="about-copy reveal">
+      <div class="eyebrow">About</div>
+      <h2>Strategy Meets <span class="grad-text">Performance.</span></h2>
+      <p>I'm <strong>Punit Sharma</strong>, a results-driven Digital Marketing Specialist with hands-on experience across <strong>Meta Ads, SEO, Social Media Management, Lead Generation, Content Strategy and Website Optimization.</strong></p>
+      <p>My work is rooted primarily in the <strong>education, overseas education, immigration and visa consultancy</strong> industries — where trust and lead quality decide everything. I build campaigns and content systems that turn attention into applications.</p>
+      <div class="stat-grid">
+        <div class="stat-card glass reveal">
+          <div class="stat-num"><span data-count="2" data-suffix="+">0</span></div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card glass reveal">
+          <div class="stat-num">₹<span data-count="20" data-suffix="L+">0</span></div>
+          <div class="stat-label">Monthly Ad Spend Managed</div>
+        </div>
+        <div class="stat-card glass reveal">
+          <div class="stat-num"><span data-count="3" data-suffix="+">0</span></div>
+          <div class="stat-label">Major Brands Managed</div>
+        </div>
+        <div class="stat-card glass reveal">
+          <div class="stat-num grad-text">Multiple</div>
+          <div class="stat-label">Digital Platforms Managed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="padding-top:20px;>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Background</div>
+      <h2>Education &amp; Certification</h2>
+    </div>
+    <div class="edu-wrap">
+      <div class="edu-feature glass reveal">
+        <div class="l">
+          <h3>Digital Marketing Certification</h3>
+          <p>Netmax Technologies Pvt. Ltd., Chandigarh</p>
+        </div>
+        <div class="badge-cert">Certified</div>
+      </div>
+      <div class="edu-accordion reveal">
+        <details class="edu-item glass">
+          <summary>D.EL.Ed (JBT) <span class="chev">＋</span></summary>
+          <div class="edu-body">District Institute of Education &amp; Training — Nahan, HP</div>
+        </details>
+        <details class="edu-item glass">
+          <summary>12th — Non-Medical <span class="chev">＋</span></summary>
+          <div class="edu-body">Govt. Sr. Sec. Boys School — Nahan, HP</div>
+        </details>
+        <details class="edu-item glass">
+          <summary>10th <span class="chev">＋</span></summary>
+          <div class="edu-body">Adarsh Vidya Niketan School — Nahan, HP</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL INTERESTS -->
+<section id="interests" style="padding-top:20px;>
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Beyond Marketing</div>
+      <h2>Personal Interests</h2>
+    </div>
+    <div class="interests-row reveal">
+      <div class="interest-chip glass">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg>
+        <span>Video Editing</span>
+      </div>
+      <div class="interest-chip glass">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="15" rx="2"/><circle cx="12" cy="13" r="4"/><path d="M8 5l1.5-2h5L16 5"/></svg>
+        <span>Photography</span>
+      </div>
+      <div class="interest-chip glass">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg>
+        <span>Traveling</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

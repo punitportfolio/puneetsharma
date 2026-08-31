@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block title %}Portfolio — Punit Sharma{% endblock %}
+{% block description %}Brands Punit Sharma has worked with — study visa consultancies and education brands, plus website development projects.{% endblock %}
+{% block preloader_letters %}<span>W</span><span>O</span><span>R</span><span>K</span>{% endblock %}
+{% block content %}
+
+<!-- PROOF -->
+<section id="proof" style="padding-top:160px;">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Proof Of Work</div>
+      <h2>Inside The Campaigns</h2>
+      <p>A look at the Meta Ads Manager dashboards behind the results.</p>
+    </div>
+    <div class="marketing-carousel">
+      <button type="button" class="carousel-arrow carousel-arrow-prev" id="galleryPrev" aria-label="Previous">&#8592;</button>
+      
+        <div class="marketing-carousel-track" id="galleryTrack">
+          <div class="marketing-gallery-item reveal">
+            <img src="{{ url_for('static', filename='media/result-1.png') }}" alt="Meta Ads campaign result" loading="lazy" width="600" height="600">
+          </div>
+          <div class="marketing-gallery-item reveal">
+            <img src="{{ url_for('static', filename='media/result-2.jpg') }}" alt="Meta Ads campaign result" loading="lazy" width="600" height="600">
+          </div>
+          <div class="marketing-gallery-item reveal">
+            <img src="{{ url_for('static', filename='media/result-3.jpg') }}" alt="Meta Ads campaign result" loading="lazy" width="600" height="600">
+          </div>
+          <div class="marketing-gallery-item reveal">
+            <img src="{{ url_for('static', filename='media/result-4.jpg') }}" alt="Meta Ads campaign creative" loading="lazy" width="600" height="600">
+          </div>
+        </div>
+      
+      <button type="button" class="carousel-arrow carousel-arrow-next" id="galleryNext" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="padding-top:40px;">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Portfolio</div>
+      <h2>Brands I've Worked With</h2>
+      <p>Selected consultancies and study-visa brands where I owned the digital marketing operation.</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Project 01 -->
+      <div class="project-card glass reveal">
+        
+        <div class="project-body">
+          <div class="project-tag">Project 01 — Study Visa Consultancy</div>
+          <h3>Seabird Education</h3>
+          <div class="project-role">Role: Digital Marketing Specialist</div>
+          <div class="project-services">
+            <span class="svc-chip">Meta Ads</span>
+            <span class="svc-chip">SEO</span>
+            <span class="svc-chip">Social Media Management</span>
+            <span class="svc-chip">Lead Generation</span>
+            <span class="svc-chip">Content Strategy</span>
+            <span class="svc-chip">Performance Reporting</span>
+          </div>
+          <p class="desc">Managing the digital marketing operations for a study visa consultancy focused on UK, Canada and Australia.</p>
+          <div class="project-highlight">₹20L+ Monthly Meta Ads Budget Managed</div>
+          <div class="project-links">
+            <a href="https://seabirdeducation.com" target="_blank" rel="noopener">Visit Website ↗</a>
+            <a href="https://www.instagram.com/seabirdeducation?igsh=Njl4OGYyYjk5c3Fp" target="_blank" rel="noopener">Instagram ↗</a>
+            <a href="https://youtube.com/@seabirdindia?si=76P1JVBOhzla_-5G" target="_blank" rel="noopener">YouTube ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="project-card glass reveal">
+        
+        <div class="project-body">
+          <div class="project-tag">Project 02 — Overseas Education</div>
+          <h3>Pathway Partners</h3>
+          <div class="project-role">Role: Digital Marketing Executive</div>
+          <div class="project-services">
+            <span class="svc-chip">SEO</span>
+            <span class="svc-chip">Meta Ads</span>
+            <span class="svc-chip">Lead Generation</span>
+            <span class="svc-chip">Social Media</span>
+            <span class="svc-chip">Blog Content</span>
+          </div>
+          <p class="desc">Managed the digital presence for an overseas education and study visa consultancy, including SEO, Meta Ads, content and multi-platform social media marketing.</p>
+          <div class="project-links">
+            <a href="https://pathwaypartners.in" target="_blank" rel="noopener">Visit Website ↗</a>
+            <a href="https://www.instagram.com/pathway_partner?igsh=NmIzZTdrYmQ4Zmp2" target="_blank" rel="noopener">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="project-card glass reveal">
+        
+        <div class="project-body">
+          <div class="project-tag">Project 03 — Immigration &amp; Visa Services</div>
+          <h3>The Dream Visa</h3>
+          <div class="project-role">Role: Digital Marketing Executive</div>
+          <div class="project-services">
+            <span class="svc-chip">SEO</span>
+            <span class="svc-chip">Social Media Marketing</span>
+            <span class="svc-chip">Content Planning</span>
+            <span class="svc-chip">Meta Ads Support</span>
+          </div>
+          <p class="desc">Contributed to SEO, social media marketing and digital presence growth for an immigration and visa services brand.</p>
+          <div class="project-links">
+            <a href="https://thedreamvisa.com" target="_blank" rel="noopener">Visit Website ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WEBSITE DEVELOPMENT -->
+<section id="webdev" style="padding-top:40px;">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Website Development</div>
+      <h2>Built For The Web. Optimized For Growth.</h2>
+      <p>Alongside digital marketing, I have contributed to and developed modern websites designed for strong digital presence and performance.</p>
+    </div>
+    <div class="webdev-grid stagger">
+      <div class="web-card glass reveal">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+        <div class="web-preview"><img src="{{ url_for('static', filename='media/sm.png') }}" alt="Sharry Mann website screenshot"></div>
+        <div class="web-card-body">
+          <div class="label">Website Development &amp; Digital Work</div>
+          <a href="https://sharrymann.com" target="_blank" rel="noopener">sharrymann.com ↗</a>
+        </div>
+      </div>
+      <div class="web-card glass reveal">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+        <div class="web-preview"><img src="{{ url_for('static', filename='media/bq.png') }}" alt="Sharry Mann website screenshot"></div>
+        <div class="web-card-body">
+          <div class="label">Website Development</div>
+          <a href="https://billioniq.co.uk" target="_blank" rel="noopener">billioniq.co.uk ↗</a>
+        </div>
+      </div>
+      <div class="web-card glass reveal">
+        <div class="browser-bar"><i></i><i></i><i></i></div>
+        <div class="web-preview"><img src="{{ url_for('static', filename='media/ha.png') }}" alt="Sharry Mann website screenshot"></div>
+        <div class="web-card-body">
+          <div class="label">Website Development</div>
+          <a href="https://housingacres.com" target="_blank" rel="noopener">housingacres.com ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

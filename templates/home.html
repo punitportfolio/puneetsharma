@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Punit Sharma — Digital Marketing Specialist{% endblock %}
+{% block content %}
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge-glass glass">Digital Marketing Specialist</div>
+      <h1>Turning Digital Attention Into <span class="grad-text">Measurable Growth.</span></h1>
+      <p class="sub">Digital Marketing Specialist helping education, immigration and growing brands scale through Meta Ads, SEO, Social Media Management and Lead Generation.</p>
+      <div class="hero-actions">
+        <a href="{{ url_for('portfolio') }}" class="btn btn-primary">
+          View My Work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+        </a>
+        <a href="{{ url_for('contact') }}" class="btn btn-ghost">Let's Work Together</a>
+      </div>
+      <div class="hero-platforms">
+        <span>Platforms managed</span>
+        <div class="platform-icons">
+          <img src="https://cdn.simpleicons.org/facebook/5aa0ff" alt="Facebook">
+          <img src="https://cdn.simpleicons.org/instagram/a78bfa" alt="Instagram">
+          <img src="https://cdn.simpleicons.org/googleads/5aa0ff" alt="Google Ads">
+          <img src="https://cdn.simpleicons.org/youtube/a78bfa" alt="YouTube">
+          
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-scale">
+      <div class="frame">
+        <img src="{{ url_for('static', filename='media/hero-visual.png') }}" alt="Digital marketing performance overview — campaigns, leads and analytics">
+      </div>
+      <div class="hero-visual chip glass chip-1"><span class="chip-dot"></span> ₹20L+ Monthly Ad Spend</div>
+      <div class="hero-visual chip glass chip-2"><span class="chip-dot"></span> Lead Gen • Live</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED RESULTS SNAPSHOT -->
+<section id="results">
+  <div class="container">
+    <div class="results-banner glass reveal-scale">
+      <div class="eyebrow" style="justify-content:center;">Featured Results</div>
+      <h2>₹20L+ <span class="grad-text">Monthly Meta Ads Budget</span> Managed</h2>
+      <p>Running high-volume Facebook and Instagram campaigns for UK, Canada and Australia study visa audiences.</p>
+      <div class="results-highlights">
+        <div class="pill">High-volume Lead Generation</div>
+        <div class="pill">Multi-country Campaigns</div>
+        <div class="pill">SEO + Paid Strategy</div>
+        <div class="pill">Performance Reporting</div>
+        <div class="pill">Conversion-Focused Marketing</div>
+      </div>
+      <div class="overview-wrap reveal">
+        <img src="{{ url_for('static', filename='media/overview.png') }}" alt="Campaign performance overview — conversions, reach, impressions and CTR">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="padding-top:40px;">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Testimonials</div>
+      <h2>What People Say</h2>
+      <p>Feedback from teams I've worked closely with.</p>
+    </div>
+    <div class="testi-grid stagger">
+      <div class="testi-card glass reveal">
+        <p class="testi-quote">Punit took ownership of our Meta Ads from day one. Lead volume scaled month over month without cost per lead spiraling out of control.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">SE</div>
+          <div>
+            <div class="testi-name">Management Team</div>
+            <div class="testi-role">Seabird Education</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass reveal">
+        <p class="testi-quote">SEO and content were an afterthought before Punit stepped in. Organic inquiries picked up within a couple of months and stayed consistent.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">PP</div>
+          <div>
+            <div class="testi-name">Founding Team</div>
+            <div class="testi-role">Pathway Partners</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass reveal">
+        <p class="testi-quote">Reliable, detail-oriented and easy to brief. Our socials finally looked and felt like a real brand instead of scattered posts.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">DV</div>
+          <div>
+            <div class="testi-name">Marketing Lead</div>
+            <div class="testi-role">The Dream Visa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
