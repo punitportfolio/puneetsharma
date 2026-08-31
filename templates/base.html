@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Punit Sharma — Digital Marketing Specialist{% endblock %}</title>
+<meta name="description" content="{% block description %}Punit Sharma, Digital Marketing Specialist. Meta Ads, SEO, Social Media Management & Lead Generation for education, immigration and growing brands.{% endblock %}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-mark">{% block preloader_letters %}<span>P</span><span>U</span><span>N</span><span>I</span><span>T</span>{% endblock %}</div>
+  <div class="loader-bar"></div>
+  <div class="loader-pct" id="loaderPct">0%</div>
+</div>
+
+<div class="bg-grid"></div>
+<div class="bg-noise"></div>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="{{ url_for('home') }}" class="logo">PUNIT<span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="{{ url_for('home') }}" class="{{ 'active' if request.endpoint == 'home' else '' }}">Home</a>
+      <a href="{{ url_for('about') }}" class="{{ 'active' if request.endpoint == 'about' else '' }}">About</a>
+      <a href="{{ url_for('services') }}" class="{{ 'active' if request.endpoint == 'services' else '' }}">Services</a>
+      <a href="{{ url_for('portfolio') }}" class="{{ 'active' if request.endpoint == 'portfolio' else '' }}">Portfolio</a>
+      <a href="{{ url_for('experience') }}" class="{{ 'active' if request.endpoint == 'experience' else '' }}">Experience</a>
+      <a href="{{ url_for('contact') }}" class="{{ 'active' if request.endpoint == 'contact' else '' }}">Contact</a>
+      <a href="{{ url_for('resume') }}" class="{{ 'active' if request.endpoint == 'resume' else '' }}">Resume</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="{{ url_for('resume_download') }}" class="btn btn-ghost btn-sm">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+        Resume
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="f-logo">PUNIT SHARMA</div>
+        <p>Digital Marketing Specialist</p>
+      </div>
+     
+    </div>
+    <div class="footer-bottom">© <span class="year">2026</span> Punit Sharma Built for Growth</div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>
